@@ -3,10 +3,17 @@ import React from "react";
 const WeatherInfo = ({conditions, time}) => {
     return (
         <div>
-            <h5>{conditions}</h5>
-            <p>{time}</p>
+          <h6>
+            <span>Conditions:</span>
+            {conditions}
+        
+          <p>
+            <span>Time:</span>
+            {time}
+            </p>
+            </h6>
         </div>
-    )
-}
+      );
+    };
 
 export default WeatherInfo

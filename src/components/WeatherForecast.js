@@ -4,11 +4,11 @@ import WeatherInfo from "./WeatherInfo"
 
 const WeatherForecast = (props) => {
     return (
-        <div>
+        <div className="weather">
             <WeatherImage img={props.img}/>
-            <WeatherInfo{...props}/>
+            <WeatherInfo {...props}/>
         </div>
-    )
-}
+    );
+};
 
 export default WeatherForecast

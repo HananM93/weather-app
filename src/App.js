@@ -1,21 +1,21 @@
 import React from "react";
 import "./styles.css";
-import weatherData from "./weatherData";
+import weatherArray from "./weatherData";
 import WeatherForecast from "./components/WeatherForecast"
 
-console.log(weatherData)
+console.log(weatherArray)
 
-const data = weatherData.map ((ele, index) => {
+const data = weatherArray.map ((ele, index) => {
   return <WeatherForecast {...ele} key={index} />
 })
 
-console.log(data)
 
 export default function App() {
   return (
     <div className="App">
-      <h1>My WeatherIcons App</h1> 
-      {data}
+      <h1>My Weather Icons App</h1>
+      <section>{data}</section>
+      
     </div>
   );
 }
