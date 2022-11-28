@@ -1,12 +1,12 @@
 import React from "react";
 import WeatherImage from "./WeatherImage"
-import WeatherConditions from "./WeatherData"
+import WeatherInfo from "./WeatherInfo"
 
-const WeatherForecast = () => {
+const WeatherForecast = (props) => {
     return (
         <div>
-            <WeatherImage />
-            <WeatherConditions />
+            <WeatherImage img={props.img}/>
+            <WeatherInfo{...props}/>
         </div>
     )
 }
